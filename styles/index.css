@@ -1,3 +1,77 @@
-body {
-  background-color: blue;
+html {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: Gilroy;
+}
+.fa-regular {
+  margin-right: 10px;
+}
+.mainHeader {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+.subHeader {
+  color: rgba(139, 139, 139, 1);
+  margin-left: 20px;
+}
+#buttons {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  /* margin-left: 60px; */
+  position: absolute;
+  left: 30px;
+  /* border: 1px solid red; */
+}
+.button {
+  color: rgb(138, 181, 201);
+  width: 200px;
+}
+.main {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#tables {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.table {
+  border: 2px solid rgb(134, 157, 174);
+  background-color: rgb(105, 122, 130);
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  /* justify-co10tent: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.table:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  -webkit-transition: all 0.3s ease;
+  box-shadow: 5px 5px 15px rgb(93, 132, 154);
+  background-color: rgb(87, 137, 160);
+}
+.server:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+@media only screen and (min-width: 500) and (max-width: 734) {
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  #tables {
+    margin-left: 300px;
+  }
 }
