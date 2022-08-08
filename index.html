@@ -5,37 +5,55 @@
     <title>Restaurant Application POC</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/86e2b465c6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <main>
-      <h1>Lynn's Cuisine</h1>
-      <div id="buttons">
-        <button class="button Alvin">Alvin</button>
-        <button class="button Demin">Demin</button>
-        <button class="button Hannah">Hannah</button>
-        <button class="button John">John</button>
-        <button class="button Kyle">Kyle</button>
-      </div>
-      <div id="tables">
-        <div class="table one">
-          <h4 class="header ones"></h4>
+      <div>
+        <div class="mainHeader">
+          <h1>Lynn's Cuisine</h1>
         </div>
-        <div class="table two">
-          <h4 class="header twos"></h4>
+        <div class="subHeader">
+          <h3>Available Servers</h4>
         </div>
-        <div class="table three">
-          <h4 class="header threes"></h4>
-        </div>
-        <div class="table four">
-          <h4 class="header fours"></h4>
+        <div class="main">
+          <div id="buttons">
+            <!-- <button class="button Alvin"></button>
+            <button class="button Demin">Demin</button>
+            <button class="button Hannah">Hannah</button>
+            <button class="button John">John</button>
+            <button class="button Kyle">Kyle</button> -->
+            <div class="button serverButton">
+              <h3 class="server alvin"><i class="fa-regular fa-user"></i>Alvin</h3>
+            </div>
+            <div class="button serverButton">
+              <h3 class="server demin"><i class="fa-regular fa-user"></i>Demin</h3>
+            </div>
+            <div class="button serverButton">
+              <h3 class="server hannah"><i class="fa-regular fa-user"></i>Hannah</h3>
+            </div>
+            <div class="button serverButton">
+              <h3 class="server john"><i class="fa-regular fa-user"></i>John</h3>
+            </div>
+            <div class="button serverButton">
+              <h3 class="server kyle"><i class="fa-regular fa-user"></i>Kyle</h3>
+            </div>
+          </div>
+          <div id="tables">
+            <!-- <div class="table one">
+              <h4 class="header ones">Table 1</h4>
+              <p class="receipt">8oz New York Strip</p>
+            </div> -->
+          </div>
         </div>
       </div>
     </main>
-    <script src="./scripts/AW_Section.js" async defer></script>
-    <script src="./scripts/HG_Section.js" async defer></script>
-    <script src="./scripts/DZ_Section.js" async defer></script>
+    <script src="./scripts/AW_Section.js"></script>
+    <script src="./scripts/HG_Section.js"></script>
+    <script src="./scripts/DZ_Section.js"></script>
     <script src="./scripts/KB_Section.js"></script>
-    <script src="./scripts/JB_Section.js" async defer></script>
+    <script src="./scripts/JB_Section.js"></script>
   </body>
 </html>
