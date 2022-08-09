@@ -52,8 +52,8 @@ for (const waiter of diners) {
     htmlWaiter += `<li>Food: ${waiter.order}</li>`;
     htmlWaiter += `<li>Bill: $${waiter.amount}</li></ul>`;
   } else if (waiter.seated === false) {
-    htmlWaiter += `<li><b>Table ${waiter.table}</b></li><ul>`;
-    htmlWaiter += `<li>Open for Seating</li></ul>`;
+    htmlWaiter += `<li style="color: blue;"><b>Table ${waiter.table}</b></li><ul>`;
+    htmlWaiter += `<li style="color: blue;">Open for Seating</li></ul>`;
   }
 }
 
