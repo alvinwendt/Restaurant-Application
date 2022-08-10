@@ -70,12 +70,12 @@ html {
 
 .tip {
   margin-top: 30px;
-
   display: block;
 }
 
 #waiter,
-#DZ_waiter {
+#DZ_waiter,
+#HG_waiter {
   text-decoration: underline;
 }
 
@@ -86,4 +86,12 @@ html {
   #tables {
     margin-left: 300px;
   }
+}
+
+.decorate {
+  margin-top: 25px;
+}
+
+.green {
+  color: rgb(97, 205, 158);
 }

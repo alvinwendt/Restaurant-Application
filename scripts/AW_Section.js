@@ -35,13 +35,13 @@ let htmlWaiter = '<h2 class="waiterTitle">Alvin Tables</h2><ul>';
 
 for (const waiter of AW_Data) {
   if (waiter.seated === true) {
-    htmlWaiter += `<li><b>Table ${waiter.table}</b></li><ul>`;
+    htmlWaiter += `<li class = "decorate"><b>Table ${waiter.table}</b></li><ul>`;
     htmlWaiter += `<li># Seated: ${waiter.seats}</li>`;
     htmlWaiter += `<li>Food: ${waiter.order}</li>`;
     htmlWaiter += `<li>Bill: $${waiter.amount}</li></ul>`;
   } else if (waiter.seated === false) {
-    htmlWaiter += `<li><b>Table ${waiter.table}</b></li><ul>`;
-    htmlWaiter += `<li>Open for Seating</li></ul>`;
+    htmlWaiter += `<li class = "decorate"><b>Table ${waiter.table}</b></li><ul>`;
+    htmlWaiter += `<li class= "green">Open for Seating</li></ul>`;
   }
 }
 

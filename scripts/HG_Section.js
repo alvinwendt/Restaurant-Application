@@ -1,33 +1,32 @@
 const HG_Data = [
-    {
-        table: 9,
-        seated: true,
-        seats: 1,
-        order: "Big Bacon Cheeseburger",
-        amount: 10.99
-    },
-    {
-        table: 10,
-        seated: false,
-        seats: 2,
-        order: ["Honey BBQ Wings", "Steak"],
-        amount: 34.98
-    },
-    {
-        table: 11,
-        seated: true,
-        seats: 3,
-        order: ["Italian Meatballs", "Buffalo Wings", "Big Bacon Cheeseburger"],
-        amount: 38.97
-    },
-    {
-        table: 12,
-        seated: true,
-        seat: 3,
-        order: ["Italian Meatballs", "Pepperoni Pizza", "Steak"],
-        amount: 48.97
-    },
-
+  {
+    table: 9,
+    seated: true,
+    seats: 1,
+    order: "Big Bacon Cheeseburger",
+    amount: 10.99,
+  },
+  {
+    table: 10,
+    seated: false,
+    seats: 2,
+    order: ["Honey BBQ Wings", "Steak"],
+    amount: 34.98,
+  },
+  {
+    table: 11,
+    seated: true,
+    seats: 3,
+    order: ["Italian Meatballs", "Buffalo Wings", "Big Bacon Cheeseburger"],
+    amount: 38.97,
+  },
+  {
+    table: 12,
+    seated: true,
+    seats: 3,
+    order: ["Italian Meatballs", "Pepperoni Pizza", "Steak"],
+    amount: 48.97,
+  },
 ];
 
 let HG_htmlWaiter = '<h2 class="waiterTitle">Hannah Tables</h2><ul>';
@@ -36,13 +35,13 @@ for (const HG_waiter of HG_Data) {
   console.log(HG_waiter);
 
   if (HG_waiter.seated === true) {
-    HG_htmlWaiter += `<li><b>Table ${HG_waiter.table}</b></li><ul>`;
+    HG_htmlWaiter += `<li class = "decorate"><b>Table ${HG_waiter.table}</b></li><ul>`;
     HG_htmlWaiter += `<li># Seated: ${HG_waiter.seats}</li>`;
     HG_htmlWaiter += `<li>Food: ${HG_waiter.order}</li>`;
     HG_htmlWaiter += `<li>Bill: $${HG_waiter.amount}</li></ul>`;
   } else if (HG_waiter.seated === false) {
-    HG_htmlWaiter += `<li><b>Table ${HG_waiter.table}</b></li><ul>`;
-    HG_htmlWaiter += `<li>Open for Seating</li></ul>`;
+    HG_htmlWaiter += `<li class = "decorate"><b>Table ${HG_waiter.table}</b></li><ul>`;
+    HG_htmlWaiter += `<li class= "green">Open for Seating</li></ul>`;
   }
 }
 

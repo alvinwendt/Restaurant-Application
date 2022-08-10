@@ -30,20 +30,19 @@ const DZ_Data = [
 ];
 
 //Logic for Tables Population
-
-let DZ_htmlWaiter = '<h2 class="waiterTitle">Demin Tables</h2><ul>';
+let DZ_htmlWaiter = '<h2 class="waiterTitle"><i class="fa-regular fa-receipt"></i>Demin Tables</h2><ul>';
 
 for (const DZ_waiter of DZ_Data) {
   console.log(DZ_waiter);
 
   if (DZ_waiter.seated === true) {
-    DZ_htmlWaiter += `<li><b>Table ${DZ_waiter.table}</b></li><ul>`;
+    DZ_htmlWaiter += `<li class = "decorate"><b>Table ${DZ_waiter.table}</b></li><ul>`;
     DZ_htmlWaiter += `<li># Seated: ${DZ_waiter.seats}</li>`;
     DZ_htmlWaiter += `<li>Food: ${DZ_waiter.order}</li>`;
     DZ_htmlWaiter += `<li>Bill: $${DZ_waiter.amount}</li></ul>`;
   } else if (DZ_waiter.seated === false) {
-    DZ_htmlWaiter += `<li><b>Table ${DZ_waiter.table}</b></li><ul>`;
-    DZ_htmlWaiter += `<li>Open for Seating</li></ul>`;
+    DZ_htmlWaiter += `<li class = "decorate"><b>Table ${DZ_waiter.table}</b></li><ul>`;
+    DZ_htmlWaiter += `<li class= "green">Open for Seating</li></ul>`;
   }
 }
 
