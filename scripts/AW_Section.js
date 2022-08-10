@@ -3,12 +3,7 @@ const AW_Data = [
     table: 1,
     seated: true,
     seats: 4,
-    order: [
-      "Bourbon Street Chicken and Shrimp",
-      "Chicken pot pie",
-      "Fried chicken",
-      "Meatloaf",
-    ],
+    order: ["Bourbon Street Chicken and Shrimp", "Chicken pot pie", "Fried chicken", "Meatloaf"],
     amount: 74.88,
   },
   {
@@ -29,12 +24,7 @@ const AW_Data = [
     table: 4,
     seated: true,
     seats: 4,
-    order: [
-      "Nachos",
-      "Tomato soup with Grilled cheese",
-      "Flatbread pizza",
-      "Mac & cheese",
-    ],
+    order: ["Nachos", "Tomato soup with Grilled cheese", "Flatbread pizza", "Mac & cheese"],
     amount: 55.69,
   },
 ];
@@ -50,8 +40,8 @@ for (const waiter of AW_Data) {
     htmlWaiter += `<li>Food: ${waiter.order}</li>`;
     htmlWaiter += `<li>Bill: $${waiter.amount}</li></ul>`;
   } else if (waiter.seated === false) {
-    htmlWaiter += `<li style="color: blue;"><b>Table ${waiter.table}</b></li><ul>`;
-    htmlWaiter += `<li style="color: blue;">Open for Seating</li></ul>`;
+    htmlWaiter += `<li><b>Table ${waiter.table}</b></li><ul>`;
+    htmlWaiter += `<li>Open for Seating</li></ul>`;
   }
 }
 
@@ -72,6 +62,4 @@ grandTotal = Number(totalBill) + Number(tipAmount);
 grandTotal = grandTotal.toFixed(2);
 
 document.getElementsByClassName("receipt")[0].innerHTML = htmlWaiter;
-document.getElementsByClassName(
-  "tip"
-)[0].innerHTML = `<p id="waiter"><b>Alvin's Final Take</b></p> <p>Subtotal: $${totalBill} <p>Total: $${grandTotal}  <h3 id="waiter">Alvin's Tips: $${tipAmount}`;
+document.getElementsByClassName("tip")[0].innerHTML = `<p id="waiter"><b>Alvin's Final Take</b></p> <p>Subtotal: $${totalBill} <p>Total: $${grandTotal}  <h3 id="waiter">Alvin's Tips: $${tipAmount}`;

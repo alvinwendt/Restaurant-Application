@@ -44,7 +44,7 @@ html {
 }
 .table {
   border: 2px solid rgb(134, 157, 174);
-  background-color: rgb(105, 122, 130);
+  background-color: rgba(105, 122, 130, 0.9);
   border-radius: 10px 45px;
   width: 300px;
   max-height: 1200px;
@@ -74,7 +74,8 @@ html {
   display: block;
 }
 
-#waiter {
+#waiter,
+#DZ_waiter {
   text-decoration: underline;
 }
 
