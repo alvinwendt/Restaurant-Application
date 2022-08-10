@@ -15,27 +15,30 @@ const KB_Data = [
       table: 18,
       seated: true,
       seats: 3,
-      order: ["Lasagna", "Chicken burger", "Chicken parmesan", "Burger Sliders"],
-      amount: 65.89,
+      order: [
+        "Caesar Salad",
+        "House Salad",
+        "Bacon Ranch Quesadilla",],
+      amount: 28.74,
     },
     {
       table: 19,
       seated: false,
       seats: 4,
-      order: ["Chicken Pesto", "Lobster rolls", "Mexican Pizza"],
-      amount: 47.52,
+      order: ["Loaded Baked Potato",
+      "Barbecue Sliders",
+      "Chicken Tenders"],
+      amount: 26.93,
     },
     {
       table: 20,
       seated: true,
       seats: 2,
       order: [
-        "Nachos",
-        "Tomato soup with Grilled cheese",
-        "Flatbread pizza",
-        "Mac & cheese",
+        "Grilled Chicken Sandwich",
+        "Turkey Wrap",
       ],
-      amount: 55.69,
+      amount: 19.67,
     },
   ];
   
@@ -45,13 +48,13 @@ const KB_Data = [
   
   for (const KB_waiter of KB_Data) {
   
-    if (waiter.seated === true) {
+    if (KB_waiter.seated === true) {
       KB_htmlWaiter += `<li><b>Table ${KB_waiter.table}</b></li><ul>`;
       KB_htmlWaiter += `<li># Seated: ${KB_waiter.seats}</li>`;
       KB_htmlWaiter += `<li>Food: ${KB_waiter.order}</li>`;
       KB_htmlWaiter += `<li>Bill: $${KB_waiter.amount}</li></ul>`;
     } else if (KB_waiter.seated === false) {
-      KB_htmlWaiter += `<li><b>Table $KB_{waiter.table}</b></li><ul>`;
+      KB_htmlWaiter += `<li><b>Table ${KB_waiter.table}</b></li><ul>`;
       KB_htmlWaiter += `<li>Open for Seating</li></ul>`;
     }
   }
@@ -72,7 +75,7 @@ const KB_Data = [
   KB_grandTotal = Number(KB_totalBill) + Number(KB_tipAmount);
   KB_grandTotal = KB_grandTotal.toFixed(2);
   
-  document.getElementsByClassName("receipt4")[0].innerKB_htmlWaiter = KB_htmlWaiter;
+  document.getElementsByClassName("receipt4")[0].innerHTML = KB_htmlWaiter;
   document.getElementsByClassName(
     "tip4"
-  )[0].innerKB_htmlWaiter = `<p id="waiter"><b>Kyle's Final Take</b></p> <p>Subtotal: $${KB_totalBill} <p>Total: $${KB_grandTotal}  <h3 id="waiter">Kyle's Tips: $${KB_tipAmount}`;
+  )[0].innerHTML = `<p id="waiter"><b>Kyle's Final Take</b></p> <p>Subtotal: $${KB_totalBill} <p>Total: $${KB_grandTotal}  <h3 id="waiter">Kyle's Tips: $${KB_tipAmount}`;
