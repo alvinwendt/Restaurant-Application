@@ -1,103 +1,69 @@
-const DeminData = [
+const DZ_Data = [
   {
     table: 5,
     seated: true,
-    food: [
-      {
-        seat: 1,
-        order: "Steak",
-        amount: 19.99,
-      },
-      {
-        seat: 2,
-        order: "Chicken Sandwhich",
-        amount: 7.99,
-      },
-      {
-        seat: 3,
-        order: "Caprese Salad",
-        amount: 12.99,
-      },
-    ],
+    seats: 4,
+    order: ["Cavatappi Bolognese", "Chicken Parmesan", "Caprese Chicken", "Lasagna"],
+    amount: 89.74,
   },
   {
     table: 6,
     seated: true,
-    food: [
-      {
-        seat: 1,
-        order: "Shrimp Scampi",
-        amount: 19.99,
-      },
-      {
-        seat: 2,
-        order: "Fish and Chips",
-        amount: 9.99,
-      },
-      {
-        seat: 3,
-        order: "Tilapia",
-        amount: 12.99,
-      },
-    ],
+    seats: 4,
+    order: ["Pad Kra Pao Moo", "Chicken Fried Rice", "Pad Thai", "Kai Yad Sai"],
+    amount: 78.95,
   },
   {
     table: 7,
-    seated: true,
-    food: [
-      {
-        seat: 1,
-        order: "Lasagna",
-        amount: 9.99,
-      },
-      {
-        seat: 2,
-        order: "Fettuccine Chicken Alfredo ",
-        amount: 9.99,
-      },
-      {
-        seat: 3,
-        order: "Cavatappi and Meatballs",
-        amount: 14.99,
-      },
-    ],
+    seated: false,
+    seats: 4,
+    order: ["Orange Chicken", "Beijing Roasted Duck", "Kung Pao Chicken", "Sweet and Sour Shrimp"],
+    amount: 115.38,
   },
   {
     table: 8,
-    seated: false,
+    seated: true,
+    seats: 4,
+    order: ["Chocolate Molten Lava Cake", "Strawberry Shortcake", "Mint Chocolate Chip Icecream", "New York Cheesecake"],
+    amount: 60.32,
   },
 ];
 
-$(document).ready(function () {
-  var CurrentSelectedServer = "";
+//Logic for Tables Population
 
-  $(".demin").click(function () {
-    if (CurrentSelectedServer == "Demin") {
-      return;
-    }
-    for (const taco of DeminData) {
-      if (taco.seated == true) {
-        let usedSeating = `<div class="table one"><h4 class="header ones">Table ${taco.table}</h4><p class="receipt">${taco.food[0].order}-$${taco.food[0].amount}</p><p class="receipt">${taco.food[1].order}-$${taco.food[1].amount}</p><p class="receipt">${taco.food[2].order}-$${taco.food[2].amount}</p></div>`;
-        $(".one").hide();
-        $(".two").hide();
-        $(".three").hide();
-        $(".four").hide();
-        $("#tables").append(usedSeating);
-      } else {
-        let openSeating = `<div class="table one"><h4 class="header ones">Table ${taco.table}</h4><p class="receipt">${"Open For Seating"}</p></div>`;
-        $(".one").hide();
-        $(".two").hide();
-        $(".three").hide();
-        $(".four").hide();
-        $("#tables").append(openSeating);
-      }
-    }
+let DZ_htmlWaiter = '<h2 class="waiterTitle">Demin Tables</h2><ul>';
 
-    $(".one").show("fast");
-    $(".two").show("fast");
-    $(".three").show("normal");
-    $(".four").show("slow");
+for (const DZ_waiter of DZ_Data) {
+  console.log(DZ_waiter);
 
-    CurrentSelectedServer = "Demin";
-  });
-});
+  if (DZ_waiter.seated === true) {
+    DZ_htmlWaiter += `<li><b>Table ${DZ_waiter.table}</b></li><ul>`;
+    DZ_htmlWaiter += `<li># Seated: ${DZ_waiter.seats}</li>`;
+    DZ_htmlWaiter += `<li>Food: ${DZ_waiter.order}</li>`;
+    DZ_htmlWaiter += `<li>Bill: $${DZ_waiter.amount}</li></ul>`;
+  } else if (DZ_waiter.seated === false) {
+    DZ_htmlWaiter += `<li><b>Table ${DZ_waiter.table}</b></li><ul>`;
+    DZ_htmlWaiter += `<li>Open for Seating</li></ul>`;
+  }
+}
+
+// Calculation for Tips
+let DZ_totalBill = 0;
+
+for (const DZ_bill of DZ_Data) {
+  if (DZ_bill.seated == true) {
+    DZ_totalBill += DZ_bill.amount;
+  }
+}
+DZ_totalBill = DZ_totalBill.toFixed(2);
+
+DZ_tipAmount = DZ_totalBill * 0.2;
+DZ_tipAmount = DZ_tipAmount.toFixed(2);
+
+DZ_grandTotal = Number(DZ_totalBill) + Number(DZ_tipAmount);
+DZ_grandTotal = DZ_grandTotal.toFixed(2);
+
+document.getElementsByClassName("receipt1")[0].innerHTML = DZ_htmlWaiter;
+document.getElementsByClassName(
+  "tip1"
+)[0].innerHTML = `<p id="DZ_waiter"><b>Demin's Final Take</b></p> <p>Subtotal: $${DZ_totalBill} <p>Total: $${DZ_grandTotal}  <h3 id="DZ_waiter">Demin's Tips: $${DZ_tipAmount}`;
