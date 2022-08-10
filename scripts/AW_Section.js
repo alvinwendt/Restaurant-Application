@@ -1,4 +1,4 @@
-const diners = [
+const AW_Data = [
   {
     table: 1,
     seated: true,
@@ -43,24 +43,22 @@ const diners = [
 
 let htmlWaiter = '<h2 class="waiterTitle">Alvin Tables</h2><ul>';
 
-for (const waiter of diners) {
-  console.log(waiter);
-
+for (const waiter of AW_Data) {
   if (waiter.seated === true) {
     htmlWaiter += `<li><b>Table ${waiter.table}</b></li><ul>`;
     htmlWaiter += `<li># Seated: ${waiter.seats}</li>`;
     htmlWaiter += `<li>Food: ${waiter.order}</li>`;
     htmlWaiter += `<li>Bill: $${waiter.amount}</li></ul>`;
   } else if (waiter.seated === false) {
-    htmlWaiter += `<li><b>Table ${waiter.table}</b></li><ul>`;
-    htmlWaiter += `<li>Open for Seating</li></ul>`;
+    htmlWaiter += `<li style="color: blue;"><b>Table ${waiter.table}</b></li><ul>`;
+    htmlWaiter += `<li style="color: blue;">Open for Seating</li></ul>`;
   }
 }
 
 // Calculation for Tips
 let totalBill = 0;
 
-for (const bill of diners) {
+for (const bill of AW_Data) {
   if (bill.seated == true) {
     totalBill += bill.amount;
   }
