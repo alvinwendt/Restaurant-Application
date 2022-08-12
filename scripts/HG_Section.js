@@ -10,26 +10,26 @@ const HG_Data = [
     table: 10,
     seated: false,
     seats: 2,
-    order: ["Honey BBQ Wings", "Steak"],
+    order: ["Honey BBQ Wings", " Steak"],
     amount: 34.98,
   },
   {
     table: 11,
     seated: true,
     seats: 3,
-    order: ["Italian Meatballs", "Buffalo Wings", "Big Bacon Cheeseburger"],
+    order: ["Italian Meatballs", " Buffalo Wings", " Big Bacon Cheeseburger"],
     amount: 38.97,
   },
   {
     table: 12,
     seated: true,
     seats: 3,
-    order: ["Italian Meatballs", "Pepperoni Pizza", "Steak"],
+    order: ["Italian Meatballs", " Pepperoni Pizza", " Steak"],
     amount: 48.97,
   },
 ];
 
-let HG_htmlWaiter = '<h2 class="waiterTitle">Hannah Tables</h2><ul>';
+let HG_htmlWaiter = '<h2 class="waiterTitle"><i class="fa-solid fa-receipt"></i>  Hannah Tables</h2><ul>';
 
 for (const HG_waiter of HG_Data) {
   console.log(HG_waiter);

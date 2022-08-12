@@ -3,35 +3,35 @@ const KB_Data = [
     table: 17,
     seated: true,
     seats: 4,
-    order: ["Hickory Bacon Cheeseburger", "Pulled Pork Sandwich", "Mexican Style Nachos", "House Fajitas"],
+    order: ["Hickory Bacon Cheeseburger", " Pulled Pork Sandwich", " Mexican Style Nachos", " House Fajitas"],
     amount: 46.88,
   },
   {
     table: 18,
     seated: true,
     seats: 3,
-    order: ["Caesar Salad", "House Salad", "Bacon Ranch Quesadilla"],
+    order: ["Caesar Salad", " House Salad", " Bacon Ranch Quesadilla"],
     amount: 28.74,
   },
   {
     table: 19,
     seated: false,
     seats: 4,
-    order: ["Loaded Baked Potato", "Barbecue Sliders", "Chicken Tenders"],
+    order: ["Loaded Baked Potato", " Barbecue Sliders", " Chicken Tenders"],
     amount: 26.93,
   },
   {
     table: 20,
     seated: true,
     seats: 2,
-    order: ["Grilled Chicken Sandwich", "Turkey Wrap"],
+    order: ["Grilled Chicken Sandwich", " Turkey Wrap"],
     amount: 19.67,
   },
 ];
 
 //Logic for Tables Population
 
-let KB_htmlWaiter = '<h2 class="waiterTitle">Kyles Tables</h2><ul>';
+let KB_htmlWaiter = '<h2 class="waiterTitle"><i class="fa-solid fa-receipt"></i>  Kyles Tables</h2><ul>';
 
 for (const KB_waiter of KB_Data) {
   if (KB_waiter.seated === true) {

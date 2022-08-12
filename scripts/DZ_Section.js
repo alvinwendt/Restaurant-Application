@@ -3,40 +3,40 @@ const DZ_Data = [
     table: 5,
     seated: true,
     seats: 4,
-    order: ["Cavatappi Bolognese", "Chicken Parmesan", "Caprese Chicken", "Lasagna"],
+    order: ["Cavatappi Bolognese", " Chicken Parmesan", " Caprese Chicken", " Lasagna"],
     amount: 89.74,
   },
   {
     table: 6,
     seated: true,
     seats: 4,
-    order: ["Pad Kra Pao Moo", "Chicken Fried Rice", "Pad Thai", "Kai Yad Sai"],
+    order: ["Pad Kra Pao Moo", " Chicken Fried Rice", " Pad Thai", " Kai Yad Sai"],
     amount: 78.95,
   },
   {
     table: 7,
     seated: false,
     seats: 4,
-    order: ["Orange Chicken", "Beijing Roasted Duck", "Kung Pao Chicken", "Sweet and Sour Shrimp"],
+    order: ["Orange Chicken", " Beijing Roasted Duck", " Kung Pao Chicken", " Sweet and Sour Shrimp"],
     amount: 115.38,
   },
   {
     table: 8,
     seated: true,
     seats: 4,
-    order: ["Chocolate Molten Lava Cake", "Strawberry Shortcake", "Mint Chocolate Chip Icecream", "New York Cheesecake"],
+    order: ["Chocolate Molten Lava Cake", " Strawberry Shortcake", " Mint Chocolate Chip Icecream", " New York Cheesecake"],
     amount: 60.32,
   },
 ];
 
 //Logic for Tables Population
-let DZ_htmlWaiter = '<h2 class="waiterTitle"><i class="fa-regular fa-receipt"></i>Demin Tables</h2><ul>';
+let DZ_htmlWaiter = '<h2 class="waiterTitle"><i class="fa-solid fa-receipt"></i>  Demin Tables</h2><ul>';
 
 for (const DZ_waiter of DZ_Data) {
   console.log(DZ_waiter);
 
   if (DZ_waiter.seated === true) {
-    DZ_htmlWaiter += `<li class = "decorate"><b>Table ${DZ_waiter.table}</b></li><ul>`;
+    DZ_htmlWaiter += `<li class = "decorate "><b>Table ${DZ_waiter.table}</b></li><ul>`;
     DZ_htmlWaiter += `<li># Seated: ${DZ_waiter.seats}</li>`;
     DZ_htmlWaiter += `<li>Food: ${DZ_waiter.order}</li>`;
     DZ_htmlWaiter += `<li>Bill: $${DZ_waiter.amount}</li></ul>`;
