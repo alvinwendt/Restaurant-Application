@@ -3,33 +3,33 @@ const JB_Data = [
     table: 13,
     seated: true,
     seats: 4,
-    order: ["Cavatappi Bolognese", "Chicken Parmesan", "Caprese Chicken", "Lasagna"],
+    order: ["Cavatappi Bolognese", " Chicken Parmesan", " Caprese Chicken", " Lasagna"],
     amount: 89.74,
   },
   {
     table: 14,
     seated: true,
     seats: 4,
-    order: ["Pad Kra Pao Moo", "Chicken Fried Rice", "Pad Thai", "Kai Yad Sai"],
+    order: ["Pad Kra Pao Moo", " Chicken Fried Rice", " Pad Thai", " Kai Yad Sai"],
     amount: 78.95,
   },
   {
     table: 15,
     seated: false,
     seats: 4,
-    order: ["Orange Chicken", "Beijing Roasted Duck", "Kung Pao Chicken", "Sweet and Sour Shrimp"],
+    order: ["Orange Chicken", " Beijing Roasted Duck", " Kung Pao Chicken", " Sweet and Sour Shrimp"],
     amount: 115.38,
   },
   {
     table: 16,
     seated: true,
     seats: 4,
-    order: ["Chocolate Molten Lava Cake", "Strawberry Shortcake", "Mint Chocolate Chip Icecream", "New York Cheesecake"],
+    order: ["Chocolate Molten Lava Cake", " Strawberry Shortcake", " Mint Chocolate Chip Icecream", " New York Cheesecake"],
     amount: 60.32,
   },
 ];
 
-let JB_htmlWaiter = '<h2 class="waiterTitle">John Tables</h2><ul>';
+let JB_htmlWaiter = '<h2 class="waiterTitle"><i class="fa-solid fa-receipt"></i>  John Tables</h2><ul>';
 
 for (const waiter of JB_Data) {
   //   console.log(waiter);

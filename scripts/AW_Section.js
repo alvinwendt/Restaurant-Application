@@ -3,35 +3,35 @@ const AW_Data = [
     table: 1,
     seated: true,
     seats: 4,
-    order: ["Bourbon Street Chicken and Shrimp", "Chicken pot pie", "Fried chicken", "Meatloaf"],
+    order: ["Bourbon Street Chicken and Shrimp", " Chicken pot pie", " Fried chicken", " Meatloaf"],
     amount: 74.88,
   },
   {
     table: 2,
     seated: false,
     seats: 4,
-    order: ["Lasagna", "Chicken burger", "Chicken parmesan", "Burger Sliders"],
+    order: ["Lasagna", " Chicken burger", " Chicken parmesan", " Burger Sliders"],
     amount: 65.89,
   },
   {
     table: 3,
     seated: true,
     seats: 3,
-    order: ["Chicken Pesto", "Lobster rolls", "Mexican Pizza"],
+    order: ["Chicken Pesto", " Lobster rolls", " Mexican Pizza"],
     amount: 47.52,
   },
   {
     table: 4,
     seated: true,
     seats: 4,
-    order: ["Nachos", "Tomato soup with Grilled cheese", "Flatbread pizza", "Mac & cheese"],
+    order: ["Nachos", " Tomato soup with Grilled cheese", " Flatbread pizza", " Mac & cheese"],
     amount: 55.69,
   },
 ];
 
 //Logic for Tables Population
 
-let htmlWaiter = '<h2 class="waiterTitle">Alvin Tables</h2><ul>';
+let htmlWaiter = '<h2 class="waiterTitle"><i class="fa-solid fa-receipt"></i>  Alvin Tables</h2><ul>';
 
 for (const waiter of AW_Data) {
   if (waiter.seated === true) {
