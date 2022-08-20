@@ -130,8 +130,78 @@ const tables = [
 const menu = [
   {
     itemId: 1,
-    itemName: " Bourbon Street Chicken and Shrimp",
+    itemName: "Bourbon Street Chicken and Shrimp",
     cost: 12.99,
+  },
+  {
+    itemId: 2,
+    itemName: " Chicken pot pie",
+    cost: 13.58,
+  },
+  {
+    itemId: 3,
+    itemName: " Fried chicken",
+    cost: 15.99,
+  },
+  {
+    itemId: 4,
+    itemName: " Meatloaf",
+    cost: 10.99,
+  },
+  {
+    itemId: 5,
+    itemName: "Lasagna",
+    cost: 16.27,
+  },
+  {
+    itemId: 6,
+    itemName: " Chicken burger",
+    cost: 10.99,
+  },
+  {
+    itemId: 7,
+    itemName: " Chicken parmesan",
+    cost: 14.58,
+  },
+  {
+    itemId: 8,
+    itemName: " Burger Sliders",
+    cost: 14.99,
+  },
+  {
+    itemId: 9,
+    itemName: "Chicken Pesto",
+    cost: 15.99,
+  },
+  {
+    itemId: 10,
+    itemName: " Lobster rolls",
+    cost: 21.99,
+  },
+  {
+    itemId: 11,
+    itemName: " Mexican Pizza",
+    cost: 18.99,
+  },
+  {
+    itemId: 12,
+    itemName: "Nachos",
+    cost: 8.99,
+  },
+  {
+    itemId: 13,
+    itemName: " Tomato soup with Grilled cheese",
+    cost: 7.99,
+  },
+  {
+    itemId: 14,
+    itemName: " Flatbread pizza",
+    cost: 10.89,
+  },
+  {
+    itemId: 15,
+    itemName: " Mac & cheese",
+    cost: 6.99,
   },
   {
     itemId: 16,
