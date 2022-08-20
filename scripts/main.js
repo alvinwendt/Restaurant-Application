@@ -203,5 +203,85 @@ const menu = [
     itemName: " Mac & cheese",
     cost: 6.99,
   },
+  {
+    itemId: 16,
+    itemName: " Cavatappi Bolognese",
+    cost: 15.99,
+  },
+  {
+    itemId: 17,
+    itemName: " Chicken Parmesan",
+    cost: 17.99,
+  },
+  {
+    itemId: 18,
+    itemName: " Caprese Chicken",
+    cost: 18.99,
+  },
+  {
+    itemId: 19,
+    itemName: " Lasagna",
+    cost: 10.99,
+  },
+  {
+    itemId: 20,
+    itemName: " Pad Kra Pao Moo",
+    cost: 14.99,
+  },
+  {
+    itemId: 21,
+    itemName: " Chicken Fried Rice",
+    cost: 12.99,
+  },
+  {
+    itemId: 22,
+    itemName: " Pad Thai",
+    cost: 17.99,
+  },
+  {
+    itemId: 23,
+    itemName: " Kai Yad Sai",
+    cost: 20.99,
+  },
+  {
+    itemId: 24,
+    itemName: " Orange Chicken",
+    cost: 17.99,
+  },
+  {
+    itemId: 25,
+    itemName: " Beijing Roasted Duck",
+    cost: 25.99,
+  },
+  {
+    itemId: 26,
+    itemName: " Kung Pao Chicken",
+    cost: 18.99,
+  },
+  {
+    itemId: 27,
+    itemName: " Sweet and Sour Shrimp",
+    cost: 20.99,
+  },
+  {
+    itemId: 28,
+    itemName: " Chocolate Molten Lava Cake",
+    cost: 15.99,
+  },
+  {
+    itemId: 29,
+    itemName: " Strawberry Shortcake",
+    cost: 12.99,
+  },
+  {
+    itemId: 30,
+    itemName: "Mint Chocolate Chip Icecream",
+    cost: 8.99,
+  },
+  {
+    itemId: 31,
+    itemName: " New York Cheesecake",
+    cost: 15.99,
+  },
 ];
 const orders = [];
