@@ -282,6 +282,64 @@ const menu = [
     itemId: 31,
     itemName: " New York Cheesecake",
     cost: 15.99,
+        itemId: 57,
+    itemName: "Hickory Bacon Cheeseburger",
+    cost: 10.99,
+  },
+  {
+    itemId: 58,
+    itemName: "Pulled Pork Sandwich",
+    cost: 11.99,
+  },
+  {
+    itemId: 59,
+    itemName: "Mexican Style Nachos",
+    cost: 8.99,
+  },
+  {
+    itemId: 60,
+    itemName: "House Fajitas",
+    cost: 12.99,
+  },
+  {
+    itemId: 61,
+    itemName: "Caesar Salad",
+    cost: 7.49,
+  },
+  {
+    itemId: 62,
+    itemName: "House Salad",
+    cost: 7.59,
+  },
+  {
+    itemId: 63,
+    itemName: "Bacon Ranch Quesadilla",
+    cost: 8.99,
+  },
+  {
+    itemId: 64,
+    itemName: "Loaded Baked Potato",
+    cost: 8.99,
+  },
+  {
+    itemId: 65,
+    itemName: "Barbecue Sliders",
+    cost: 9.99,
+  },
+  {
+    itemId: 66,
+    itemName: "Chicken Tenders",
+    cost: 7.89,
+  },
+  {
+    itemId: 67,
+    itemName: "Grilled Chicken Sandwich",
+    cost: 10.99,
+  },
+  {
+    itemId: 68,
+    itemName: "Turkey Wrap",
+    cost: 6.99,
   },
 ];
 const orders = [];
