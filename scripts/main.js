@@ -203,5 +203,35 @@ const menu = [
     itemName: " Mac & cheese",
     cost: 6.99,
   },
+  {
+    itemId: 16,
+    itemName: "Big bacon cheeseburger",
+    cost: 10.99
+  },
+  {
+    itemId: 17,
+    itemName: "Steak",
+    cost: 20.99
+  },
+  {
+    itemId: 18,
+    itemName: "Honey BBQ Wings",
+    cost: 13.99
+  },
+  {
+    itemId: 19,
+    itemName: "Italian meatballs",
+    cost: 13.99
+  },
+  {
+    itemId: 20,
+    itemName: "Buffalo wings",
+    cost: 13.99
+  },
+  {
+    itemId: 21,
+    itemName: "Pepperoni pizza",
+    cost: 13.99
+  }
 ];
 const orders = [];
