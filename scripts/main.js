@@ -331,64 +331,195 @@ const menu = [
     itemName: " Margarita Pizza",
     cost: 12.99,
   },
+  // Johns Items
+  {
+    temId: 41,
+    itemName: " choclate Mama Turney’s Pie",
+    cost: 17.99,
+  },
+  {
+    temId: 42,
+    itemName: " choclate chip cookies",
+    cost: 5.99,
+  },
+  {
+    temId: 43,
+    itemName: " cinnamon coffe cake",
+    cost: 4.99,
+  },
+  {
+    temId: 44,
+    itemName: " choclate Mama Turney’s Pie",
+    cost: 16.99,
+  },
+  {
+    temId: 45,
+    itemName: " pecan pie",
+    cost: 15.99,
+  },
+  {
+    temId: 46,
+    itemName: " cinnamon coffe cake",
+    cost: 5.45,
+  },
+  {
+    temId: 47,
+    itemName: " caramel salty cookies",
+    cost: 6.99,
+  },
+  {
+    temId: 48,
+    itemName: " caramel pie",
+    cost: 14.99,
+  },
+  {
+    temId: 49,
+    itemName: " lemon pie",
+    cost: 4.99,
+  },
+  {
+    temId: 50,
+    itemName: " peach pie",
+    cost: 8.99,
+  },
+  {
+    temId: 51,
+    itemName: " cherry pie",
+    cost: 20.99,
+  },
+  {
+    temId: 52,
+    itemName: " apple pie",
+    cost: 15.99,
+  },
+  {
+    temId: 53,
+    itemName: " ice tea",
+    cost: 2.99,
+  },
+  {
+    temId: 54,
+    itemName: " apple juice",
+    cost: 6.99,
+  },
+  {
+    temId: 55,
+    itemName: " lemonada",
+    cost: 4.99,
+  },
+  {
+    temId: 56,
+    itemName: " ice tea",
+    cost: 2.99,
+  },
+  {
+    temId: 57,
+    itemName: " four berry ice cream",
+    cost: 3.99,
+  },
+  {
+    temId: 58,
+    itemName: " cupcakes",
+    cost: 6.99,
+  },
+  {
+    temId: 59,
+    itemName: " ice cream cake",
+    cost: 4.99,
+  },
+  {
+    temId: 60,
+    itemName: " choclate cake",
+    cost: 13.99,
+  },
+  {
+    temId: 61,
+    itemName: " yellow cake",
+    cost: 19.99,
+  },
+  {
+    temId: 62,
+    itemName: " coconut pie",
+    cost: 7.99,
+  },
+  {
+    temId: 63,
+    itemName: " cookies",
+    cost: 9.99,
+  },
+  {
+    temId: 64,
+    itemName: " fudge cake",
+    cost: 4.99,
+  },
+  {
+    temId: 65,
+    itemName: " ice cream",
+    cost: 6.99,
+  },
+  {
+    temId: 67,
+    itemName: " cheese cake",
+    cost: 5.99,
+  },
   // Kyles Items
   {
-    itemId: 57,
+    itemId: 68,
     itemName: "Hickory Bacon Cheeseburger",
     cost: 10.99,
   },
   {
-    itemId: 58,
+    itemId: 69,
     itemName: "Pulled Pork Sandwich",
     cost: 11.99,
   },
   {
-    itemId: 59,
+    itemId: 70,
     itemName: "Mexican Style Nachos",
     cost: 8.99,
   },
   {
-    itemId: 60,
+    itemId: 71,
     itemName: "House Fajitas",
     cost: 12.99,
   },
   {
-    itemId: 61,
+    itemId: 72,
     itemName: "Caesar Salad",
     cost: 7.49,
   },
   {
-    itemId: 62,
+    itemId: 73,
     itemName: "House Salad",
     cost: 7.59,
   },
   {
-    itemId: 63,
+    itemId: 74,
     itemName: "Bacon Ranch Quesadilla",
     cost: 8.99,
   },
   {
-    itemId: 64,
+    itemId: 75,
     itemName: "Loaded Baked Potato",
     cost: 8.99,
   },
   {
-    itemId: 65,
+    itemId: 76,
     itemName: "Barbecue Sliders",
     cost: 9.99,
   },
   {
-    itemId: 66,
+    itemId: 77,
     itemName: "Chicken Tenders",
     cost: 7.89,
   },
   {
-    itemId: 67,
+    itemId: 78,
     itemName: "Grilled Chicken Sandwich",
     cost: 10.99,
   },
   {
-    itemId: 68,
+    itemId: 79,
     itemName: "Turkey Wrap",
     cost: 6.99,
   },
