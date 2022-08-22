@@ -128,6 +128,7 @@ const tables = [
   },
 ];
 const menu = [
+  // Alvins Items
   {
     itemId: 1,
     itemName: "Bourbon Street Chicken and Shrimp",
@@ -203,6 +204,7 @@ const menu = [
     itemName: " Mac & cheese",
     cost: 6.99,
   },
+  // Demins Items
   {
     itemId: 16,
     itemName: " Cavatappi Bolognese",
@@ -282,7 +284,10 @@ const menu = [
     itemId: 31,
     itemName: " New York Cheesecake",
     cost: 15.99,
-        itemId: 57,
+  },
+  // Kyles Items
+  {
+    itemId: 57,
     itemName: "Hickory Bacon Cheeseburger",
     cost: 10.99,
   },
