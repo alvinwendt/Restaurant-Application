@@ -285,6 +285,52 @@ const menu = [
     itemName: " New York Cheesecake",
     cost: 15.99,
   },
+  // Hannahs Items
+  {
+    itemId: 32,
+    itemName: " Big Bacon Cheeseburger",
+    cost: 12.99,
+  },
+  {
+    itemId: 33,
+    itemName: " Honey BBQ Wings",
+    cost: 10.99,
+  },
+  {
+    itemId: 34,
+    itemName: " Steak",
+    cost: 18.99,
+  },
+  {
+    itemId: 35,
+    itemName: " Italian Meatballs",
+    cost: 10.99,
+  },
+  {
+    itemId: 36,
+    itemName: " Buffalo Wings",
+    cost: 13.99,
+  },
+  {
+    itemId: 37,
+    itemName: " Smoked Salmon",
+    cost: 16.99,
+  },
+  {
+    itemId: 38,
+    itemName: " Three Cheese Ravioli",
+    cost: 14.99,
+  },
+  {
+    itemId: 39,
+    itemName: " Pepperoni Pizza",
+    cost: 9.99,
+  },
+  {
+    itemId: 40,
+    itemName: " Margarita Pizza",
+    cost: 12.99,
+  },
   // Kyles Items
   {
     itemId: 57,
