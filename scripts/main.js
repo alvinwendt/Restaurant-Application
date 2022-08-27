@@ -475,6 +475,49 @@ const menu = [
   },
 ];
 const orders = [
+  {
+  orderId: 17,
+  itemId: [68, 69, 70, 71],
+  tableId: 17,
+  totalBill: 0,
+  tip: 0,
+  completed: true,
+},
+];
+
+export const findMenuItem = () => {
+  for (let order of orders) {
+    order.itemId.forEach(itemId => {
+     const menuItems = menu.find(menuItem => menuItem.itemId === itemId)
+     console.log(menuItems.itemName)
+    });
+  }
+};
+
+// findMenuItem()
+
+
+
+ const test = () => {
+  //return an array of orders, those orders should have the server name and the table items
+  let ordersArray = orders.map(order => {
+    let table = tables.find(monkey => order.tableId === monkey.tableId)
+
+
+   let fullOrder = {
+    table: table,
+    orderId: order.orderId, 
+    totalBill: order.totalBill,
+    tip: order.tip,
+    completed: order.completed
+  }
+   return fullOrder
+  })
+  return ordersArray
+}
+
+// test()
+=======
   // Alvins Orders
   {
     orderId: 1,
